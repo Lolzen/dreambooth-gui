@@ -22,6 +22,8 @@ function pickTrainingArgs(gpuInfo: GpuInfo) {
     let config = {
         mixed_precision: 'fp16',
         train_batch_size: 1,
+	sample_batch_size: 1,
+	num_class_images: 200,
         gradient_accumulation_steps: 1,
         gradient_checkpointing: true,
         use_8bit_adam: true,
