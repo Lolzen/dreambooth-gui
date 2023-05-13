@@ -9,7 +9,7 @@ export class DockerCommand {
         private subCommand: Command,
         private volumeMapping: [string, string][] = [],
         private additionalArguments: string[] = [],
-        private image = "lolzen/dreambooth:v0.1.10-2",
+        private image = "lolzen/dreambooth:v0.1.11",
         private alwaysPull = true,
     ) { }
 
