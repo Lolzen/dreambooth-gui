@@ -110,8 +110,9 @@ export default class Dreambooth {
 
     public getTrainingCommand(): Command {
         return {
-            executable: "python",
+            executable: "accelerate",
             arguments: [
+                launch,
                 this.scriptLocation,
                 `--pretrained_model_name_or_path=${this.model}`,
                 ...this.getInstantArguments(),
